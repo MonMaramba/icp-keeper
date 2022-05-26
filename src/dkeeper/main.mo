@@ -1,8 +1,9 @@
 // 
 import List "mo:base/List";
 import Debug "mo:base/Debug"
-actor DKeeper {
 
+
+actor DKeeper {
 // creating a data type accessible to JS 
  public type Note = {
     title: Text;
@@ -24,7 +25,7 @@ actor DKeeper {
 // pushing by prepending into the List. Push is a List method
 // to change the initial value of notes from it's empty creation
 notes := List.push(newNote, notes);
-
+Debug.print(debug_show(notes))
 
   }
 }
